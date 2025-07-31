@@ -41,6 +41,7 @@
           width="500"
           height="300"
           loading="lazy"
+          id="profile-pic"
         />
       </div>
       <div class="col-lg-6">
@@ -85,11 +86,8 @@
         <div class="col d-flex align-items-start">
           <div
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-          >
-            <svg class="bi" width="1em" height="1em" aria-hidden="true">
-              <use xlink:href="#toggles2"></use>
-            </svg>
-          </div>
+          ></div>
+
           <div>
             <h3 class="fs-2 text-body-emphasis">Web Design</h3>
             <p>
@@ -101,11 +99,7 @@
         <div class="col d-flex align-items-start">
           <div
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-          >
-            <svg class="bi" width="1em" height="1em" aria-hidden="true">
-              <use xlink:href="#cpu-fill"></use>
-            </svg>
-          </div>
+          ></div>
           <div>
             <h3 class="fs-2 text-body-emphasis">Social Media</h3>
             <p>
@@ -118,11 +112,7 @@
         <div class="col d-flex align-items-start">
           <div
             class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-          >
-            <svg class="bi" width="1em" height="1em" aria-hidden="true">
-              <use xlink:href="#tools"></use>
-            </svg>
-          </div>
+          ></div>
           <div>
             <h3 class="fs-2 text-body-emphasis">Career Development</h3>
             <p>
@@ -137,49 +127,183 @@
     </div>
     <!-- End of Work Section -->
     <!-- Interests Section -->
-    <div
-      class="row gx-4 align-items-center justify-content-between"
-      id="interests-section"
-    >
-      <div class="col-md-5 order-2 order-md-1">
-        <div class="mt-5 mt-md-0">
-          <h2 class="display-5 fw-bold">My Interests</h2>
-          <p class="lead">
-            Outside of Web Development, I like to do a variety of things.
-          </p>
-          <p class="lead">
-            While I consider myself to be a home-body, I am usually willing to
-            give anything at least one try! To the right, here are some things I
-            usually engage in.
-          </p>
+
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Hobbies & Interests</h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./assets/bench.jpg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                Going to the gym
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://github.com/twbs.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg
+                    class="bi me-2"
+                    width="1em"
+                    height="1em"
+                    role="img"
+                    aria-label="Location"
+                  >
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    class="bi me-2"
+                    width="1em"
+                    height="1em"
+                    role="img"
+                    aria-label="Duration"
+                  >
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 offset-md-1 order-1 order-md-2">
-        <div class="row gx-2 gx-lg-3">
-          <div class="col-6">
-            <div class="mb-2">
-              <img class="img-fluid rounded-3" src="./assets/bench.jpg" />
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./assets/yasuo.jpg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                League <br />
+                of <br />
+                Legends
+              </h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://github.com/twbs.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg
+                    class="bi me-2"
+                    width="1em"
+                    height="1em"
+                    role="img"
+                    aria-label="Location"
+                  >
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    class="bi me-2"
+                    width="1em"
+                    height="1em"
+                    role="img"
+                    aria-label="Duration"
+                  >
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-6">
-            <div class="mb-2">
-              <img class="img-fluid rounded-3" src="./assets/chonc.jpeg" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="mb-2">
-              <img class="img-fluid rounded-3" src="./assets/running.jpg" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="mb-2">
-              <img class="img-fluid rounded-3" src="./assets/yasuo.jpg" />
+        </div>
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('./assets/running.jpg')"
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Running</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://github.com/twbs.png"
+                    alt="Bootstrap"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg
+                    class="bi me-2"
+                    width="1em"
+                    height="1em"
+                    role="img"
+                    aria-label="Location"
+                  >
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg
+                    class="bi me-2"
+                    width="1em"
+                    height="1em"
+                    role="img"
+                    aria-label="Duration"
+                  >
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- End of Interests Section -->
+    <!-- Footer -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a
+            href="https://www.linkedin.com/in/jack-rattanasith/"
+            class="nav-link px-2 text-body-secondary"
+            >LinkedIn</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://github.com/jrattanasith"
+            class="nav-link px-2 text-body-secondary"
+            >GitHub</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="mailto:jrattanasith@gmail.com"
+            class="nav-link px-2 text-body-secondary"
+            >Email</a
+          >
+        </li>
+      </ul>
+
+      <p class="text-center text-body-secondary">© 2025 Jack Rattanasith</p>
+    </footer>
+
+    <!-- End of Footer -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
